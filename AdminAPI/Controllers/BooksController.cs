@@ -10,6 +10,8 @@ namespace AdminAPI.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
+        //TODO: Move context away from controller and put into a repository class.
+        //TODO: Replace context with a service handler
         private readonly BookDetailContext _context;
 
         public BooksController(BookDetailContext context)
